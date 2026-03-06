@@ -10,4 +10,4 @@ wheels/
 .venv
 
 # Sensitive config
-client.py
+src/client.py

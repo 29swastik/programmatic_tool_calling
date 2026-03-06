@@ -6,7 +6,7 @@ This repo demonstrates how Programmatic Tool Calling (PTC) benefits in terms of 
 
 ```bash
 uv add openai
-python3 main.py "What is ((15 + 7) * 3) / 44"
+python3 src/main.py "What is ((15 + 7) * 3) / 44"
 ```
 
 ## Sample Output

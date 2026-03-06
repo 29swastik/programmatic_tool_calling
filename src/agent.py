@@ -1,7 +1,13 @@
 import time
 
+from openai import OpenAI
 from tools import TOOLS, CODE_EXECUTION_TOOLS, call_tool
-from client import get_client
+
+try:
+    from client import get_client
+except ImportError:
+    def get_client():
+        return OpenAI()
 
 SYSTEM_PROMPT = "You are a helpful assistant with access to math tools. Use them to answer the user's questions."
 
