@@ -68,7 +68,7 @@ While final_answer_not_generated:
 ```
 
 
-![alt text](image.png)
+![alt text](traditional_tool_call.png)
 
 
 The problem is that most of the time it is not necessary for the LLM to see intermediate tool results, they can simply be passed through to the next tool call without the LLM needing to reason about them. In such cases, the intermediate results just sit in the context, causing more token usage.
@@ -86,7 +86,7 @@ While final_answer_not_generated:
 ```
 
 
-![alt text](image-1.png)
+![alt text](ptc.png)
 
 
 ## Benefits
