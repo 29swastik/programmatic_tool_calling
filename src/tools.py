@@ -16,7 +16,11 @@ def divide(a: float, b: float) -> float:
 
 
 def execute_python(code: str) -> str:
-    """Execute LLM-generated Python code"""
+    """Execute LLM-generated Python code.
+
+    WARNING: This uses exec() directly and is for demonstration purposes only.
+    In production, always run LLM-generated code in a proper sandbox.
+    """
     scope = {"__builtins__": {}, "add": add, "multiply": multiply, "divide": divide}
     try:
         print(f"  -> Executing code:\n{code}")
